@@ -5,7 +5,7 @@
 // @alton7759
 //
 // Lab 06-01
-// Partners: @person
+// Partners: @jaylinmai
 //
 // makes a cool pattern
 //
