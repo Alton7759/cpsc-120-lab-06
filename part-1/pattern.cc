@@ -1,24 +1,31 @@
-
-// TODO: Insert your header.
+// Christian Alton Bonilla
+// CPSC 120-01
+// 2022-10-12
+// Alton77@csu.fullerton.edu
+// @alton7759
+//
+// Lab 06-01
+// Partners: @person
+//
+// makes a cool pattern
+//
 
 #include <iostream>
 
-// TODO: Declare a const int named kCounterMax and initialize it to 22.
+const int kCounterMax{22};
 
 int main(int argc, char const *argv[]) {
-  // TODO: Write an outer loop which starts from 0 and goes up to the counter
-  // max.
-
-  // TODO: Write an inner loop which starts from the current line number and
-  // counts down to zero. Make sure that this loop is inside the outer loop.
-
-  // TODO: Print an asterisk.
-
-  // TODO: Write another inner loop which starts from the current line number
-  // and counts up to the counter max. Make sure that this loop is inside the
-  // outer loop but outside the first inner loop.
-
-  // TODO: print a new line character
-
+  int thecount = 0;
+  for (int i = 0; i < kCounterMax; i++) {
+    for (int dash = 0; dash < thecount; dash++) {
+      std::cout << "-";
+    }
+    std::cout << "*";
+    for (int line = 22; line > thecount; line -= 1) {
+      std::cout << "|";
+    }
+    std::cout << "\n";
+    thecount++;
+  }
   return 0;
 }
